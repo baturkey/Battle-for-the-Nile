@@ -1,0 +1,41 @@
+.board {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 16px;
+    height: 16px;
+}
+
+.cell:hover {
+    opacity: 50%;
+}
+
+.bg_W {
+    background: blue;
+}
+
+.bg_D {
+    background: tan;
+}
+
+.bg_F {
+    background: green;
+}
+
+.bg_F.memphis {
+    background: lightgreen;
+}
+
+.bg_F.thebes {
+    background: darkgreen;
+}
+
+.bg_C {
+    background: grey;
+}
