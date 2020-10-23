@@ -1,0 +1,16 @@
+.logContainer {
+    padding: 10px;
+}    
+
+.log {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    font-size: .75em;
+    overflow-y: scroll;
+}
+
+.event {
+    padding-bottom: 10px;
+}

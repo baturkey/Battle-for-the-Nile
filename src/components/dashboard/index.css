@@ -1,5 +1,4 @@
 .dashboard {
-    min-height: 100vh;
     display: flex;
     padding: 10px;
     flex-direction: column;

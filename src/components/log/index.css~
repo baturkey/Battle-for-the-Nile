@@ -1,0 +1,11 @@
+.log {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: grey;
+    font-size: .75em;
+}
+
+.event {
+    padding-bottom: 10px;
+}
