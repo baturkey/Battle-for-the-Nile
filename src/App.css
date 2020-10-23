@@ -8,6 +8,12 @@
   color: white;
 }
 
+.header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .info {
     flex-basis: 33.3%;
     display: flex;

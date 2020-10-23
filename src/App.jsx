@@ -37,9 +37,9 @@ export default class App extends React.Component
                 sudan: 0,
             },
             log: [{
-                    title: 'Turn 1',
-                    description: ''
-                }],
+                title: 'Turn 1',
+                description: ''
+            }],
         };
         this.incrementTurn = this.incrementTurn.bind(this);
         this.getDetail = this.getDetail.bind(this);
@@ -94,8 +94,8 @@ export default class App extends React.Component
 
         state.turn++;
         state.log.push({
-                    title: 'Turn ' + state.turn,
-                    description: ''
+            title: 'Turn ' + state.turn,
+            description: ''
         });
         
         this.setState(state);
@@ -164,24 +164,29 @@ export default class App extends React.Component
     }
 
     render = () => (
-        <div className="App">
-            <div className="info">
-                <Dashboard
-                    turn={this.state.turn}
-                    player={this.state.player}
-                    incrementTurn={this.incrementTurn} />
-                <Log
-                    log={this.state.log} />
+        <div>
+            <div className="header">
+                Work in progress. Source at <a href="https://github.com/baturkey/Battle-for-the-Nile">GitHub</a>
             </div>
-            <Board
-                map={this.state.map}
-                flood={this.state.flood}
-                getDetail={this.getDetail} />
-            <Detail
-                map={this.state.map}
-                detail={this.state.detail}
-                player={this.state.player}
-                detailAction={this.detailAction} />
+            <div className="App">
+                <div className="info">
+                    <Dashboard
+                        turn={this.state.turn}
+                        player={this.state.player}
+                        incrementTurn={this.incrementTurn} />
+                    <Log
+                        log={this.state.log} />
+                </div>
+                <Board
+                    map={this.state.map}
+                    flood={this.state.flood}
+                    getDetail={this.getDetail} />
+                <Detail
+                    map={this.state.map}
+                    detail={this.state.detail}
+                    player={this.state.player}
+                    detailAction={this.detailAction} />
+            </div>
         </div>
     );
 }
